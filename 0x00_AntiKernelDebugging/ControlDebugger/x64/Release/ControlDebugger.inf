@@ -7,7 +7,7 @@ Signature="$WINDOWS NT$"
 Class=System
 ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318}
 Provider=%ManufacturerName%
-DriverVer = 03/08/2020,23.11.15.59
+DriverVer = 03/09/2020,17.59.23.477
 CatalogFile=ControlDebugger.cat
 
 [DestinationDirs]

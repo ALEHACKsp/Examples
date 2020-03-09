@@ -1,5 +1,11 @@
 #pragma once
 #include "customapi.h"
+#include <stdlib.h>
+
+/*//////////////////////////////////////////////
+# File : control.h
+# Desc : 디버거 제어와 관련된 함수 정의
+*///////////////////////////////////////////////
 
 
 /*
@@ -12,7 +18,7 @@ NTSTATUS KdDebuggerControl(int mode)
 {
 	if (mode == DEBUGGER_ENABLE)
 	{
-		*KdDebuggerEnabled = TRUE;	
+		*KdDebuggerEnabled = TRUE;		
 	}
 	else if (mode == DEBUGGER_DISABLE)
 	{
@@ -96,7 +102,19 @@ NTSTATUS OverWriteCallbacks(int mode)
 */
 NTSTATUS OverWriteDebugPort(PIRP pIrp)
 {
-	DbgPrintEx(DPFLTR_ACPI_ID, DPFLTR_INFO_LEVEL, "[INFO] OverWriteDebugPort\n");
+	int targetPID = atoi(pIrp->AssociatedIrp.SystemBuffer);
+	PEPROCESS Process = NULL;
+	PVOID pDebugPort = NULL;
+	
+	if (PsLookupProcessByProcessId(targetPID, &Process) == STATUS_SUCCESS)
+	{
+		pDebugPort = (void*)((DWORD64)Process + iOffset.DebugPort_off);
+		if (MmIsAddressValid(pDebugPort))
+		{
+			memset(pDebugPort, 0, 8);
+		}
+	}
+
 	return STATUS_SUCCESS;
 }
 
@@ -166,6 +184,7 @@ NTSTATUS ControlDebugger(PDEVICE_OBJECT pDeviceObject, PIRP pIrp)
 			Status = OverWriteCallbacks(RESTORE_CALLBACKS);
 			if (Status == STATUS_SUCCESS)
 			{
+				
 				DbgPrintEx(DPFLTR_ACPI_ID, DPFLTR_INFO_LEVEL, "[INFO] Restore Callbacks\n");
 			}
 			else

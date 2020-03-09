@@ -1,30 +1,31 @@
 ﻿  Building 'ControlDebugger' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: 스펙터 완화가 사용하도록 설정되어 있지만 스펙터 완화된 라이브러리를 찾을 수 없습니다. Visual Studio 워크로드에 스펙터 완화된 라이브러리가 포함되어 있는지 확인하세요. 자세한 내용은 https://aka.ms/Ofhn4c를 참조하세요.
   Stamping x64\Release\ControlDebugger.inf
-  Stamping [Version] section with DriverVer=03/08/2020,23.11.15.59
+  Stamping [Version] section with DriverVer=03/09/2020,17.59.23.477
   main.c
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(30,50): warning C4047:  '=': 'PLIST_ENTRY'의 간접 참조 수준이 'PVOID *'과(와) 다릅니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(95,51): warning C4133:  '=': 'PCHAR'과(와) 'PEPROCESS' 사이의 형식이 호환되지 않습니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(98,42): warning C4047:  '함수': 'ULONG'의 간접 참조 수준이 'void *'과(와) 다릅니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(98,42): warning C4024:  'ObOpenObjectByPointer': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(98,54): warning C4047:  '함수': 'ACCESS_MASK'의 간접 참조 수준이 'void *'과(와) 다릅니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(98,54): warning C4024:  'ObOpenObjectByPointer': 형식 및 실제 매개 변수 4의 형식이 서로 다릅니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(89,1): warning C4152:  비표준 확장입니다. 식에서 함수/데이터 포인터 변환이 있습니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(94,1): warning C4047:  '초기화 중': 'PLIST_ENTRY'의 간접 참조 수준이 'PVOID *'과(와) 다릅니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(83,6): warning C4189:  'ProcName': 지역 변수가 초기화되었으나 참조되지 않았습니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(143,20): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(145,42): warning C4057:  '함수': 'const char *'은(는) 약간 다른 기본 형식에 대한 간접 참조가 'UCHAR [256]'과(와) 다릅니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\customapi.h(136,1): warning C4152:  비표준 확장입니다. 식에서 함수/데이터 포인터 변환이 있습니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\control.h(41,61): warning C4047:  '=': 'PVOID'의 간접 참조 수준이 'DWORD64'과(와) 다릅니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\control.h(60,48): warning C4133:  '=': '_LIST_ENTRY *'과(와) 'PCALLBACK_ENTRY_ITEM' 사이의 형식이 호환되지 않습니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\control.h(64,49): warning C4152:  비표준 확장입니다. 식에서 함수/데이터 포인터 변환이 있습니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\control.h(65,40): warning C4113:  'void (__cdecl *)()'은(는) 'POB_PRE_OPERATION_CALLBACK'과(와) 매개 변수 목록이 다릅니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\control.h(65,40): warning C4133:  '=': 'void (__cdecl *)()'과(와) 'POB_PRE_OPERATION_CALLBACK' 사이의 형식이 호환되지 않습니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\control.h(71,48): warning C4133:  '=': '_LIST_ENTRY *'과(와) 'PCALLBACK_ENTRY_ITEM' 사이의 형식이 호환되지 않습니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\control.h(77,50): warning C4152:  비표준 확장입니다. 식에서 함수/데이터 포인터 변환이 있습니다.
-D:\Shh0ya\ProcessProtection\ControlDebugger\control.h(97,34): warning C4100:  'pIrp': 참조되지 않은 정식 매개 변수입니다.
-  ControlDebugger.vcxproj -> D:\Shh0ya\ProcessProtection\x64\Release\ControlDebugger.sys
+e:\shh0ya\processprotection\controldebugger\customapi.h(36): warning C4047: '=': 'PLIST_ENTRY'의 간접 참조 수준이 'PVOID *'과(와) 다릅니다.
+e:\shh0ya\processprotection\controldebugger\customapi.h(111): warning C4133: '=': 'PCHAR'과(와) 'PEPROCESS' 사이의 형식이 호환되지 않습니다.
+e:\shh0ya\processprotection\controldebugger\customapi.h(114): warning C4047: '함수': 'ULONG'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+e:\shh0ya\processprotection\controldebugger\customapi.h(114): warning C4024: 'ObOpenObjectByPointer': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+e:\shh0ya\processprotection\controldebugger\customapi.h(114): warning C4047: '함수': 'ACCESS_MASK'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+e:\shh0ya\processprotection\controldebugger\customapi.h(114): warning C4024: 'ObOpenObjectByPointer': 형식 및 실제 매개 변수 4의 형식이 서로 다릅니다.
+e:\shh0ya\processprotection\controldebugger\customapi.h(105): warning C4152: 비표준 확장입니다. 식에서 함수/데이터 포인터 변환이 있습니다.
+e:\shh0ya\processprotection\controldebugger\customapi.h(110): warning C4047: '초기화 중': 'PLIST_ENTRY'의 간접 참조 수준이 'PVOID *'과(와) 다릅니다.
+e:\shh0ya\processprotection\controldebugger\customapi.h(99): warning C4189: 'ProcName': 지역 변수가 초기화되었으나 참조되지 않았습니다.
+e:\shh0ya\processprotection\controldebugger\customapi.h(159): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+e:\shh0ya\processprotection\controldebugger\customapi.h(161): warning C4057: '함수': 'const char *'은(는) 약간 다른 기본 형식에 대한 간접 참조가 'UCHAR [256]'과(와) 다릅니다.
+e:\shh0ya\processprotection\controldebugger\customapi.h(152): warning C4152: 비표준 확장입니다. 식에서 함수/데이터 포인터 변환이 있습니다.
+e:\shh0ya\processprotection\controldebugger\control.h(47): warning C4047: '=': 'PVOID'의 간접 참조 수준이 'DWORD64'과(와) 다릅니다.
+e:\shh0ya\processprotection\controldebugger\control.h(66): warning C4133: '=': '_LIST_ENTRY *'과(와) 'PCALLBACK_ENTRY_ITEM' 사이의 형식이 호환되지 않습니다.
+e:\shh0ya\processprotection\controldebugger\control.h(70): warning C4152: 비표준 확장입니다. 식에서 함수/데이터 포인터 변환이 있습니다.
+e:\shh0ya\processprotection\controldebugger\control.h(71): warning C4113: 'void (__cdecl *)()'은(는) 'POB_PRE_OPERATION_CALLBACK'과(와) 매개 변수 목록이 다릅니다.
+e:\shh0ya\processprotection\controldebugger\control.h(71): warning C4133: '=': 'void (__cdecl *)()'과(와) 'POB_PRE_OPERATION_CALLBACK' 사이의 형식이 호환되지 않습니다.
+e:\shh0ya\processprotection\controldebugger\control.h(77): warning C4133: '=': '_LIST_ENTRY *'과(와) 'PCALLBACK_ENTRY_ITEM' 사이의 형식이 호환되지 않습니다.
+e:\shh0ya\processprotection\controldebugger\control.h(83): warning C4152: 비표준 확장입니다. 식에서 함수/데이터 포인터 변환이 있습니다.
+e:\shh0ya\processprotection\controldebugger\control.h(109): warning C4022: 'PsLookupProcessByProcessId': 실제 매개 변수 1의 포인터가 일치하지 않습니다.
+  ControlDebugger.vcxproj -> E:\shh0ya\ProcessProtection\x64\Release\ControlDebugger.sys
   Done Adding Additional Store
-  Successfully signed: D:\Shh0ya\ProcessProtection\x64\Release\ControlDebugger.sys
+  Successfully signed: E:\shh0ya\ProcessProtection\x64\Release\ControlDebugger.sys
   
   .........................
   Signability test complete.
@@ -36,7 +37,7 @@ D:\Shh0ya\ProcessProtection\ControlDebugger\control.h(97,34): warning C4100:  'p
   None
   
   Catalog generation complete.
-  D:\Shh0ya\ProcessProtection\x64\Release\ControlDebugger\controldebugger.cat
+  E:\shh0ya\ProcessProtection\x64\Release\ControlDebugger\controldebugger.cat
   Done Adding Additional Store
-  Successfully signed: D:\Shh0ya\ProcessProtection\x64\Release\ControlDebugger\controldebugger.cat
+  Successfully signed: E:\shh0ya\ProcessProtection\x64\Release\ControlDebugger\controldebugger.cat
   

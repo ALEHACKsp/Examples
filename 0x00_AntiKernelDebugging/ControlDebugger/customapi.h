@@ -1,6 +1,12 @@
 #pragma once
 #include "common.h"
 
+/*//////////////////////////////////////////////
+# File : customapi.h
+# Desc : 기타 사용자 함수 정의
+*///////////////////////////////////////////////
+
+
 /*
 # Name  : Dummy
 # Param : x
@@ -69,6 +75,16 @@ BOOLEAN GetOffset(PEPROCESS Process)
 		DbgPrintEx(DPFLTR_ACPI_ID, 0, "[ERR] Not found offset\n");
 		return success;
 	}
+
+	// DebugPort Offset(temp)
+	PVOID PsGetProcessDebugPort = NULL;
+	UNICODE_STRING PsGetProcessDebugPortString = { 0, };
+	int offset = 0;
+	RtlInitUnicodeString(&PsGetProcessDebugPortString, L"PsGetProcessDebugPort");
+	PsGetProcessDebugPort = MmGetSystemRoutineAddress(&PsGetProcessDebugPortString);
+	memcpy(&offset, (void*)((DWORD64)PsGetProcessDebugPort + 0x3), 2);
+	iOffset.DebugPort_off = offset;
+
 	return success;
 }
 
