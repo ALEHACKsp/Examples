@@ -5,7 +5,7 @@
 - LoadImageNotifyRoutine Template
 - LoadImageNotifyRoutine Example
 - Anti Debugging Driver Example
+- **Control Debugger**
 
-continue
 
 
